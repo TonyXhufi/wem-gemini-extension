@@ -1,0 +1,8 @@
+description = "Find the best current deal for a product via WEM"
+prompt = """
+Find the best deal for: {{args}}
+
+Call WEM's find_best_deal tool. Show the top result with its price and
+retailer, mention one or two runners-up, note that prices are indicative
+snapshots, and include the disclosure line returned by the tool.
+"""
