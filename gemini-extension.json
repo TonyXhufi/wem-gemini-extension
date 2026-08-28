@@ -1,0 +1,11 @@
+{
+  "name": "wem-price-compare",
+  "version": "1.0.0",
+  "description": "Compare a product's price across retailers with WEM — barcode-first matching, indicative prices, disclosed affiliate funding.",
+  "mcpServers": {
+    "wem": {
+      "httpUrl": "https://wem3.ai/api/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

@@ -1,0 +1,8 @@
+description = "Find the lowest listed price for a product via WEM"
+prompt = """
+Find the lowest price for: {{args}}
+
+Call WEM's find_lowest_price tool. Show the top result with its price and
+retailer, mention one or two runners-up, note that prices are indicative
+snapshots, and include the disclosure line returned by the tool.
+"""

@@ -1,0 +1,10 @@
+description = "Compare a product's price across retailers via WEM"
+prompt = """
+Compare prices for: {{args}}
+
+Use the WEM tools. If the input contains a barcode (8-14 digit number) or a
+wem3.ai/pl/ URL, call compare_offers first; otherwise call search_products.
+Present offers cheapest-first with retailer names, note that prices are
+indicative and the retailer sets the final price, and include the disclosure
+line returned by the tool.
+"""
