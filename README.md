@@ -3,7 +3,7 @@
 # WEM Price Compare — Gemini CLI extension
 
 Connects [Gemini CLI](https://github.com/google-gemini/gemini-cli) to WEM's
-public MCP server. Free, read-only, no account.
+public MCP server. Free, read-only, no account. Rate-limited per IP.
 
 ## Install
 
@@ -33,13 +33,6 @@ eight read-only tools. Nothing writes, purchases, or takes payment.
 | `compare_offers` | Multi-retailer offers for one product, cheapest first, with a 90-day price-history low |
 | `verify_offer` | Check whether a price claim is still true before repeating it |
 | `get_categories` | Category taxonomy with approximate price ranges |
-
-## Limits
-
-60 requests/min per IP, 500 product lookups/day per IP, 1000/day across all
-callers. These protect the upstream retailer API quota shared with wem3.ai.
-`compare_offers`, `verify_offer` and `get_categories` read WEM's own catalogue
-and do not count against the lookup quota.
 
 ## Using it outside Gemini CLI
 
